@@ -1,4 +1,4 @@
-#!/usr/bin/python0i3
+#!/usr/bin/python3
 """defines a class square"""
 
 
