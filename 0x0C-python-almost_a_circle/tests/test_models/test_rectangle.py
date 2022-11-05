@@ -1,3 +1,5 @@
+###This module needs to be revised
+
 #!/usr/bin/python3
 """Defines unittests for models/rectangle.py.
 Unittest classes:
@@ -12,8 +14,6 @@ Unittest classes:
     TestRectangle_update_kwargs - line 676
     TestRectangle_to_dictionary - line 788
 """
-
-
 import io
 import sys
 import unittest
@@ -251,7 +251,7 @@ class TestRectangle_height(unittest.TestCase):
 
     def test_negative_height(self):
         with self.assertRaisesRegex(ValueError, "height must be > 0)":
-                Rectangle(1, -1)
+            Rectangle(1, -1)
 
     def test_zero_height(self):
         with self.assertRaisesRegex(ValueError, "height must be > 0"):
