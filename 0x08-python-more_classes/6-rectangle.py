@@ -1,6 +1,12 @@
 #!/usr/bin/python3
+"""defines a class Rectangle"""
+
+
 class Rectangle:
-    """defines a class rectangle"""
+    """represents a class rectangle"""
+    number_of_instances = 0
+
+
     def __init__(self, width=0, height=0):
         """initializes class rectangle
         Args:
@@ -11,6 +17,7 @@ class Rectangle:
                 ValueError: if width and height is not integer"""
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def height(self):
@@ -61,10 +68,12 @@ class Rectangle:
             if i < self.__height - 1:
                 rectangle = "\n"
         return(rectangle)
+
     def __repr__(self):
         """returns rectangle in string format"""
         return "Rectangle ({:d}, {:d}" .format(self.__width, self.__height)
+
     def __del__(self):
         """deletes an instance of the class rectangle"""
         print("Bye rectangle...")
-        Rectangle.num_of_instances -= 1
+        Rectangle.number_of_instances -= 1
