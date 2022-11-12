@@ -6,7 +6,6 @@ class Rectangle:
     """represents a class rectangle"""
     number_of_instances = 0
 
-
     def __init__(self, width=0, height=0):
         """initializes class rectangle
         Args:
@@ -32,11 +31,12 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-    @property
 
+    @property
     def width(self):
         """retrieves attribute width"""
         return self.__width
+
     @width.setter
     def width(self, value):
         """sets width attribute"""
@@ -47,7 +47,6 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__width = value
 
-
     def area(self):
         """returns area of rectangle"""
         return (self.__width * self.__height)
@@ -55,8 +54,9 @@ class Rectangle:
     def perimeter(self):
         """returns perimeter of rectangle"""
         if self.__width == 0 or self.__height == 0:
-            return(0)
-        return ((self.__width + self.__height) *2)
+            return (0)
+        return ((self.__width + self.__height) * 2)
+
     def __str__(self) -> str:
         """draws a diagram of rectangle defined in object"""
         if self.__width == 0 or self.__height == 0:
@@ -67,7 +67,7 @@ class Rectangle:
                 rectangle += "#"
             if i < self.__height - 1:
                 rectangle = "\n"
-        return(rectangle)
+        return (rectangle)
 
     def __repr__(self):
         """returns rectangle in string format"""
