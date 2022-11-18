@@ -3,7 +3,7 @@
 
 
 class Square:
-
+    """showing a square"""
     def __init__(self, size=0):
         """instantiates size"""
         if not isinstance(size, int):
