@@ -16,33 +16,33 @@ class Rectangle:
         self.height = height
 
     @property
-    def height(self):
+    def width(self):
         """retrieves  attribute height"""
-        return self.__height
+        return self.__width
 
-    @height.setter
-    def height(self, value):
+    @width.setter
+    def width(self, value):
         """sets height attribute"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
-        self.__height = value
+        self.__width = value
 
     @property
-    def width(self):
+    def height(self):
         """retrieves attribute width"""
-        return self.__width
+        return self.__height
 
-    @width.setter
-    def width(self, value):
+    @height.setter
+    def height(self, value):
         """sets width attribute"""
 
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
-        self.__width = value
+        self.__height = value
 
     def area(self):
         """returns area of rectangle"""
