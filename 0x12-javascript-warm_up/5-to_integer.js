@@ -1,9 +1,8 @@
 #!/usr/bin/node
-const myArg = process.argv[2];
-
-if (/^-?\d+$/.test(myArg)) {
-  const num = parseInt(myArg, 10);
-  console.log('My number: ${num}');
-} else {
-  console.log('Not a number');
-}
+/**
+ * create a constant variable `num` and assign the second arg to it
+ * convert the second arg to Number
+ * if it throws NaN error, print out `Not a number`
+ */
+const num = Math.floor(Number(process.argv[2]));
+console.log(isNaN(num) ? 'Not a number' : `My number: ${num}`);

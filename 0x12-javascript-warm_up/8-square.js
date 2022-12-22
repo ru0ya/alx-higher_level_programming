@@ -1,3 +1,4 @@
+#!/usr/bin/node
 const sizeArg = process.argv[2];
 
 if (/^\d+$/.test(sizeArg)) {
