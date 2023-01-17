@@ -7,4 +7,3 @@ if __name__ == "__main__":
     print("Body response:")
     print("- type: {} ".format(type(response.text)))
     print("- content: {} ".format(response.text))
-

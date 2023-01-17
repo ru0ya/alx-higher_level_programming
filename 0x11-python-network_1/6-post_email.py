@@ -12,9 +12,3 @@ if __name__ == "__main__":
     res = requests.post(url, data=data)
 
     print(res.text)
-
-
-
-
-
-

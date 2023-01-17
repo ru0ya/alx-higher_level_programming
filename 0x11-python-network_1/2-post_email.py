@@ -12,8 +12,6 @@ if __name__ == "__main__":
     data = urllib.parse.urlencode({"email": email}).encode('utf-8')
     agizo = urllib.request.Request(url, data=data, method='POST')
 
-
     with urllib.request.urlopen(agizo) as response:
         data = response.read()
         print(data.read.decode("utf-8"))
-
