@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""takes a URL and email and sends POST request to passed URL"""
+
 
 import sys
 import urllib.request

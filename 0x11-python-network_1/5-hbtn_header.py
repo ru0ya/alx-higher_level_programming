@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""uses requests to take a url, send request and post its id"""
 
 import requests
 import sys

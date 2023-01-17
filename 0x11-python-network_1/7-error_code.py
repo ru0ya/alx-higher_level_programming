@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""takes url, sends request and displays
+body of response:
+    if status code is >= 400 it prints its
+    error code
+    """
 
 import sys
 import requests

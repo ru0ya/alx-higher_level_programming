@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""takes url, sends request to url and displays id value"""
+
 
 import sys
 import urllib.request

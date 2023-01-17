@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""takes url,sends request to url and displays body of response"""
 
 import urllib.request
 import sys

@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+fetches a url"""
+
 
 import urllib.request
 

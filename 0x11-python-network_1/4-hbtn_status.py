@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""uses requests to fetch a url"""
 
 import requests
 
