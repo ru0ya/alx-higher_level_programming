@@ -3,10 +3,10 @@
 
 const fs = require('fs');
 
-const path_to_file = process.argv[2];
-const text_to_write = process.argv[3];
+const pathToFile = process.argv[2];
+const textToWrite = process.argv[3];
 
-fs.writeFile(path_to_file, text_to_write, (err, data) => {
+fs.writeFile(pathToFile, textToWrite, 'utf-8', (err, data) => {
   if (err) {
     console.error(err);
   } else {

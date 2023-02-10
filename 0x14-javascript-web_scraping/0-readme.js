@@ -3,11 +3,11 @@
 
 const fs = require('fs');
 
-const file_to_read = process.argv[2];
+const fileToRead = process.argv[2];
 
-fs.readFile(file_to_read, 'utf-8', (err, data) => {
+fs.readFile(fileToRead, 'utf-8', (err, data) => {
   if (err) {
-    console.error(error);
+    console.error(err);
   } else {
     console.log(data);
   }
