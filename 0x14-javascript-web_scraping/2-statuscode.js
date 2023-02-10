@@ -3,9 +3,9 @@
 
 const request = require('request');
 
-const url_to_request = process.argv[2];
+const urlToRequest = process.argv[2];
 
-request.get(url_to_request, (error, response) => {
+request.get(urlToRequest, (error, response) => {
   if (error) {
     console.error(error);
   } else {

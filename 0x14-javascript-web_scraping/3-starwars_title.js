@@ -10,7 +10,7 @@ request(toUrl, (error, response, body) => {
   if (error) {
     console.error(error);
   } else {
-	  const movie = JSON.parse(body);
-	  console.log(movie.title);
+    const movie = JSON.parse(body);
+    console.log(movie.title);
   }
 });

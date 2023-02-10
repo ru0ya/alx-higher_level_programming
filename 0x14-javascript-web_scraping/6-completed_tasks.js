@@ -11,7 +11,7 @@ request(url, (error, response, body) => {
     console.error(error);
   } else {
     const tasksCompleted = {};
-    data = JSON.parse(body);
+    const data = JSON.parse(body);
     data.forEach((todo) => {
       if (!tasksCompleted[todo.userId]) {
         tasksCompleted[todo.userId] = 1;
@@ -19,6 +19,6 @@ request(url, (error, response, body) => {
         tasksCompleted[todo.userId] += 1;
       }
     });
-	  console.log(tasksCompleted);
+    console.log(tasksCompleted);
   }
 });
