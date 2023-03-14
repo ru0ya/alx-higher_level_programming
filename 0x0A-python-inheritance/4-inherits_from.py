@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""checks if object is instance of a 
-class inherited directly/indirectly from 
+"""checks if object is instance of a
+class inherited directly/indirectly from
 specified class"""
 
 
