@@ -6,10 +6,8 @@ const fs = require('fs');
 const pathToFile = process.argv[2];
 const textToWrite = process.argv[3];
 
-fs.writeFile(pathToFile, textToWrite, 'utf-8', (err, data) => {
+fs.writeFile(pathToFile, textToWrite, 'utf-8', function (err) {
   if (err) {
     console.error(err);
-  } else {
-    console.log(data);
   }
 });
